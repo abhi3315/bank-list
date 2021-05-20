@@ -21,3 +21,9 @@
 body {
   overflow-x: hidden;
 }
+
+.not-found {
+  display: block;
+  text-align: center;
+  font-size: 20px;
+}
