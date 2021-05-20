@@ -19,8 +19,11 @@ function App() {
           <BankList state={state} dispatch={dispatch} />
           <Snackbar state={state} dispatch={dispatch} />
         </Route>
-        <Route path="/banks/:ifsc">
+        <Route exact path="/banks/:ifsc">
           <BankDetails />
+        </Route>
+        <Route exact path="*">
+          <code className="not-found">404 | Page not found</code>
         </Route>
       </Switch>
     </div>
