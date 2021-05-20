@@ -17,7 +17,7 @@ export const initialState = {
   data: null,
   errorMessage: "",
   city: "",
-  favourites: localStorage.getItem("favourite-banks").split(",") || [],
+  favourites: localStorage.getItem("favourite-banks")?.split(",") || [],
 };
 
 export const reducer = (state = initialState, action) => {
